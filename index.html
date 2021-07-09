@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="https://www.colorcombos.com/images/colors/FF3C00.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+   <div class="container">
+      <div class="calculator_wrapper">
+        <!-- <h2 id="heading">You Can Calculate Here</h2> -->
+
+        <div class="calculator">
+               <div class="num_wrapper">
+                <form action="#" name="datas">
+                <input type="number" name="number1" maxlength = "20" placeholder="First Number">
+                <input type="number" name="number2" maxlength = "20" placeholder="Second Number">
+               </div>
+
+
+                <ul id="myList"></ul>
+
+             <div class="button_wrapper">
+                <button type="button" onclick="plus(+datas.number1.value , +datas.number2.value)"><i class="fas fa-plus"></i></button>
+                <button type="button" onclick="minus(+datas.number1.value , +datas.number2.value)"><i class="fas fa-minus"></i></button>
+                <button type="button" onclick="multiplication(+datas.number1.value , +datas.number2.value)" class="multiplay" >×</button>
+                <button type="button" onclick="division(+datas.number1.value , +datas.number2.value)" ><i class="fas fa-divide"></i></button>
+                <button type="button" onclick="modulus(+datas.number1.value , +datas.number2.value)" title="Modulus">%</button>
+                <button type="reset" onclick="function()" class="last_btn">C</button>
+                </form>
+            </div>
+        </div>
+     </div>
+   </div>
+
+   <script src="custom.js"></script>
+</body>
+</html>

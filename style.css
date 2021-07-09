@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    background-color: #FD4B11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.container{
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.calculator_wrapper h2{
+   margin-bottom: 20px;
+}
+
+
+
+.calculator_wrapper button{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(255, 72, 0);
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0 auto;
+    /* margin: 15px; */
+}
+
+
+button.multiplay{
+    font-size: 30px;
+}
+
+
+.button_wrapper{
+    margin: auto;
+    width: 90%;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    column-count: 3;
+}
+
+
+button.last_btn{
+    /* margin-right: 0px; */
+}
+
+
+
+#myList{
+    list-style: none;
+    width: 80%;
+    height: 60px;
+    border-radius: 5px;
+    background-color:#222222;
+    color: #ffffff;
+    margin: 15px auto;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+
+
+#myList li{
+    margin: 10px 5px;
+    font-size: 20px;
+}
+
+
+
+
+.calculator input{
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    border: 1px solid rgb(201, 201, 201);
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
